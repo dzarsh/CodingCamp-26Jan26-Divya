@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 40px;
+  border-bottom: 1px solid #aaa;
+}
+
+.header nav a {
+  margin-left: 10px;
+  padding: 4px 10px;
+  border: 1px solid #aaa;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+.home {
+  padding: 30px 40px;
+  height: 250px;
+}
+
+.hq, .message {
+  padding: 30px 40px;
+}
+
+.hq-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+.circle {
+  width: 90px;
+  height: 90px;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin-bottom: 8px;
+}
+
+.hq-item {
+  text-align: center;
+}
+
+.message-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 10px;
+}
+
+.radio {
+  grid-column: 2;
+  display: flex;
+  gap: 10px;
+}
+
+textarea {
+  height: 60px;
+}
+
+button {
+  grid-column: 2;
+  padding: 6px;
+}
+
+.result {
+  border: 1px solid black;
+  padding: 10px;
+  line-height: 1.6;
+}
+
+/* PROFILE */
+.banner {
+  height: 200px;
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-content {
+  padding: 30px 40px;
+}
+
+.profile-content h3 {
+  margin-top: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hq-container,
+  .message-container {
+    flex-direction: column;
+    grid-template-columns: 1fr;
+  }
+
+  form {
+    grid-template-columns: 1fr;
+  }
+
+  button {
+    grid-column: 1;
+  }
+}
